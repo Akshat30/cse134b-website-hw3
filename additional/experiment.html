@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Akshat Jain" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment Page</title>
+    <link href="styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Experiment Page</h1>
+      <a href="../index.html">Click here to go back to main page.</a>
+      <p>
+        This page demonstrates some other tags required that may not fit
+        semantically in other parts of the website. (at least for the timebeing)
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h4>This is a simple canvas tag in use:</h4>
+        <canvas width="200" height="100" style="border: 1px solid"> </canvas>
+
+        <p>This is a svg tag in use to make a circle:</p>
+        <svg>
+          <circle cx="50" cy="50" r="40" stroke="black" />
+        </svg>
+      </section>
+      <hr />
+      <section>
+        <h3>University of California, San Diego's Address</h3>
+        <address>9500 Gilman Dr<br />La Jolla, CA<br />92093</address>
+      </section>
+      <hr />
+      <section>
+        <h3>More EDM Artists</h3>
+        <dl>
+          <dt>Chris Lake</dt>
+          <dd>House artist, part of Antiup</dd>
+          <dt>Levity</dt>
+          <dd>Three person group, dubstep</dd>
+          <dt>Subtronics</dt>
+          <dd>Dubstep artist</dd>
+        </dl>
+      </section>
+      <hr />
+      <dialog open>
+        Boo! <br />
+        This is an open dialog box.
+      </dialog>
+      <br /><br /><br /><br />
+      <hr />
+      <section>
+        <h4>Details and summary tags.</h4>
+        <details>
+          <summary>
+            Click to see a list of my favorite artists of all time.
+          </summary>
+          <ul>
+            <li>Drake</li>
+            <li>John Summit</li>
+            <li>Dom Dolla</li>
+            <li>21 Savage</li>
+          </ul>
+        </details>
+      </section>
+      <hr />
+      <section>
+        <h4>
+          I love <del>frontend</del> <ins>backend</ins> development the most!
+        </h4>
+        <p>#sorrynotsorry #jk</p>
+      </section>
+      <hr />
+      <section>
+        <h3>
+          There is a template tag below this sentence, but the content should
+          display at the start of this page.
+        </h3>
+        <template id="template-of-aj">
+          <p>
+            This sentence should be at the start of the page, achieved using the
+            template tag.
+          </p>
+        </template>
+        <script>
+          const tempObject = document
+            .getElementById('template-of-aj')
+            .content.cloneNode(true);
+          document.body.prepend(tempObject); // adds it to the start of the body (since i used prepend)
+        </script>
+      </section>
+      <hr />
+      <section>
+        <h4>Figure photo:</h4>
+        <figure>
+          <img
+            src="../profile-picture.jpg"
+            alt="Akshat Jain's Profile Picture"
+          />
+          <figcaption>
+            This is a photo of me, Akshat Jain, as a figure.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by <b>Akshat Jain</b>.</p>
+    </footer>
+  </body>
+</html>

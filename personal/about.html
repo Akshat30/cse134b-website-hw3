@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Akshat Jain's About Me Page" />
+    <meta name="keywords" content="Akshat Jain, software, engineering" />
+    <meta name="author" content="Akshat Jain" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Akshat Jain</title>
+    <link href="styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <a href="../index.html">Click here to go back to main page.</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>Bio</h2>
+        <p>
+          Hello! My name is AJ. I was born in India and lived there until the
+          age of 8. After that, I moved to Dallas, TX, living there for 2 years.
+          Finally, I then moved to the Bay Area, CA, and have been living there
+          since then.
+        </p>
+        <p>
+          I only started going by
+          <abbr title="Akshat Jain">AJ</abbr> in college!
+        </p>
+        <p>Here is a quote that I live by:</p>
+        <blockquote>
+          <p>
+            Live as if you were to die tomorrow. Learn as if you were to live
+            forever.
+          </p>
+          <p>- Mahama Gandhi</p>
+        </blockquote>
+        <cite
+          >quote source:
+          <a href="https://www.brainyquote.com/quotes/mahatma_gandhi_133995"
+            >Brainy Quote</a
+          ></cite
+        >
+        <p>Here is a photo of me:</p>
+        <picture>
+          <source
+            media="(min-width: 3000px)"
+            srcset="../large-profile-picture.jpg"
+          />
+          <img src="../profile-picture.jpg" alt="Photo of Akshat Jain" />
+        </picture>
+      </section>
+      <section>
+        <h3>Form to contact me!</h3>
+        <form action="/personal/about.html">
+          <fieldset>
+            <legend>Contact Me!</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" /><br /><br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" /><br /><br />
+
+            <label for="reason">Reason for contacting:</label>
+            <select id="reason" name="reason">
+              <optgroup label="Professional">
+                <option value="recruiter">Recruiter</option>
+                <option value="networking">Networking</option>
+              </optgroup>
+              <optgroup label="Personal">
+                <option value="hobbies">Discuss Hobbies</option>
+              </optgroup></select
+            ><br /><br />
+
+            <label for="coolness"
+              >How cool are you? This will not influence my response back to
+              you.</label
+            >
+            <input list="coolnesses" id="coolness" name="coolness" />
+            <datalist id="coolnesses">
+              <option value="Somewhat cool"></option>
+              <option value="Cool"></option>
+              <option value="Very cool"></option>
+              <option value="Almost as cool as Akshat Jain"></option>
+            </datalist>
+
+            <br /><br />
+            <label for="add_info">Additional information:</label>
+            <textarea id="add_info" name="add_info"></textarea><br /><br />
+
+            <label>Hit <kbd>Tab + Enter</kbd> to submit.</label>
+            <br /><br />
+            <input type="submit" value="Send!" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by <b>Akshat Jain</b>.</p>
+    </footer>
+  </body>
+</html>
