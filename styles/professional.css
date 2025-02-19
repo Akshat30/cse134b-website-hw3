@@ -1,5 +1,6 @@
 /* css for professional.html */
 
+/* goal here was to style it like a resume, with some flair*/
 .prof-entry {
   display: flex;
   flex-direction: column;
@@ -18,6 +19,7 @@
   font-weight: bold;
 }
 
+/* i liked how this color() green turned out, i can see the difference */
 .prof-header h4 {
   margin: 0;
   color: var(--green-accent, green);

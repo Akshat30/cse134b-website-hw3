@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 
-/* highlight a project that has an iframe preview inside it */
+/* highlight a project that has an iframe preview inside it, by outlining the parent in green */
 .project-card:has(iframe) {
   border: 0.1rem solid var(--green-accent);
 }
@@ -41,6 +41,7 @@
   color: var(--green-accent, yellow);
 }
 
+/* links to the individual projects */
 .project-card a {
   color: var(--special-hyperlink, blue);
   text-decoration: none;

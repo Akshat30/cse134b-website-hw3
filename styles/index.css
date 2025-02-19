@@ -8,6 +8,7 @@
   font-size: xx-large;
 }
 
+/* set of cards describing me */
 .card-container {
   display: flex;
   justify-content: center;

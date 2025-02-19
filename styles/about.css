@@ -29,6 +29,7 @@
   line-height: 1.6;
 }
 
+/* left in the quote from hw2, but wanted to style it further */
 .about-quote {
   flex: 1;
   border-left: 0.25rem solid gray;
@@ -40,7 +41,7 @@
 }
 
 .about-quote a {
-  color: #9370db;
+  color: var(--text-color, white);
   text-decoration: none;
   font-weight: bold;
 }
@@ -58,7 +59,7 @@
 }
 
 .about-image img {
-  width: 31rem;
+  width: 31rem; /* converted pixels to rem */
   height: auto;
   border-radius: 0.6rem;
   object-fit: cover;
@@ -79,12 +80,12 @@
 
   .about-quote {
     text-align: center;
-    border-left: none;
     padding-left: 0;
     border-left: 0.125rem solid gray;
     padding-top: 1rem;
   }
 
+  /* reduce image size */
   .about-image img {
     width: 60%;
   }

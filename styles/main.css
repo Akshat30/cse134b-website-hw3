@@ -40,6 +40,7 @@ header {
   align-items: center;
 }
 
+/* special animation that rotates the text aj. in the navbar */
 @keyframes rotate-header-aj {
   0% {
     transform: rotate(0deg);
@@ -55,9 +56,9 @@ header h1 a {
   font-size: 2em;
   color: var(--white-color, white);
   display: inline-block;
-  transition: transform 0.3s ease-in-out;
 }
 
+/* rotates the text aj. if it is hovered over */
 header h1 a:hover {
   animation: rotate-header-aj 2s linear infinite;
 }
@@ -68,6 +69,7 @@ nav {
   justify-content: center;
 }
 
+/* list of dropdown/link */
 nav ul {
   list-style: none;
   padding: 0;
@@ -81,6 +83,7 @@ nav ul li {
   display: inline-block;
 }
 
+/* give it a button appearance */
 nav ul li a {
   display: block;
   padding: 1rem 1.25rem;
@@ -136,6 +139,7 @@ section {
   border-radius: 0.5rem;
 }
 
+/* standard heading sizes looked small on the website/mobile */
 h2 {
   font-size: 2em;
 }
