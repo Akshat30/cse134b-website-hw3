@@ -1,0 +1,35 @@
+/* css for professional.html */
+
+.prof-entry {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  gap: 1px;
+}
+
+.prof-entry p {
+  margin: 0.5em 0em;
+}
+
+.prof-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.prof-header h4 {
+  margin: 0;
+  color: var(--green-accent, green);
+}
+
+.prof-header p {
+  margin: 0;
+}
+
+/* phone */
+@media (max-width: 768px) {
+  .prof-header {
+    flex-direction: column;
+  }
+}

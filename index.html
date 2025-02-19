@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- standard meta information-->
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -11,101 +12,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akshat Jain's Portfolio</title>
     <link href="styles/main.css" rel="stylesheet" />
-    <script>
-      // placeholder for a third-party analytics script, as specified in the rubric.
-    </script>
-    <style>
-      body {
-        border: 0px solid black;
-      }
-    </style>
+    <link href="styles/index.css" rel="stylesheet" />
+    <!--Font Nunito Sans imported from Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome for dropdown carets-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Akshat Jain's Portfolio</h1>
+      <h1><a href="/index.html">aj.</a></h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">career <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li>
+                <a href="/career/professional.html">professional</a>
+              </li>
+              <li>
+                <a href="/career/projects.html">projects</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/personal/about.html">about</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section>
-        <hgroup>
-          <h2>Welcome!</h2>
-          <p>This website displays my <i>software engineering portfolio!</i></p>
-        </hgroup>
+      <section class="main-header">
+        <h2><strong>hey, i'm aj!</strong></h2>
+        <p>this website displays my <em>software engineering portfolio!</em></p>
       </section>
 
-      <section>
-        <h3>Quick Introduction</h3>
-        <p>
-          Hi, my name is AJ! I am a fourth year computer science major at the
-          University of California, San Diego.
-        </p>
-        <p>
-          My experience revolves around different types of software engineering
-          and tech consulting, including <em>video game design</em>,
-          <em>full stack development</em>, <em>applications of LLMs</em>, and
-          <em>large-scale error metrics</em>.
-          <br />
-          In my free time, I enjoy working out, drinking different types of
-          coffee, cooking, and going on hikes.
-        </p>
-        <aside>I also enjoy listening to EDM in my free time!</aside>
-        <div>
-          <br />
-          <button onclick="">
-            <!-- no action defined for now-->
-            Click this button to let me know you saw my portfolio!
-          </button>
-        </div>
+      <!--shrunk the images here using tinypng.com, resource found in class Slack-->
+      <section class="card-container">
+        <article class="main-card">
+          <div class="card-header">
+            <h3>software engineer</h3>
+            <p>bay area, ca</p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/goldengatebridge/small.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/goldengatebridge/large.png"
+            />
+            <img
+              src="./images/goldengatebridge/large.png"
+              alt="Golden Gate Bridge"
+            />
+          </picture>
+          <!--source: https://unsplash.com/photos/photo-of-golden-gate-bridge-Ji_G7Bu1MoM-->
+        </article>
+
+        <article class="main-card">
+          <div class="card-header">
+            <h3>computer science</h3>
+            <p>university of california, san diego</p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/geisel/geisel-small.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/geisel/geisel-large.png"
+            />
+            <img
+              src="./images/geisel/geisel-large.png"
+              alt="Geisel Library, UCSD"
+            />
+          </picture>
+          <!--source: https://today.ucsd.edu/story/uc_san_diego_named_14th_best_university_in_world_in_shanghai_jiao_tong_univ-->
+        </article>
+
+        <article class="main-card">
+          <div class="card-header">
+            <h3>ex front end dev</h3>
+            <p>center for applied internet data analysis</p>
+          </div>
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/caida/caida-small.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/caida/caida-large.png"
+            />
+            <img src="./images/caida/caida-large.png" alt="CAIDA logo" />
+          </picture>
+          <!--source: https://datanexus.ucsd.edu/research-data/index.html-->
+        </article>
       </section>
-
-      <div>
-        <h2>Different parts to this website:</h2>
-        <p>Links with * have content that is relevant to Homework 2.</p>
-        <nav>
-          <h3>Career</h3>
-          <ul>
-            <li>
-              <a href="/career/education.html">Education [Under Development]</a>
-            </li>
-            <li>
-              <a href="/career/professional.html"
-                >Professional Experience [Under Development]</a
-              >
-            </li>
-            <li>
-              <a href="/career/projects.html"><strong>*Projects</strong></a>
-            </li>
-          </ul>
-        </nav>
-
-        <nav>
-          <h3>Personal</h3>
-          <ul>
-            <li><a href="personal/about.html">*About Me</a></li>
-            <li>
-              <a href="personal/gallery.html">Gallery [Under Development]</a>
-            </li>
-            <li><a href="personal/hobbies.html">*Hobbies</a></li>
-          </ul>
-        </nav>
-
-        <nav>
-          <h3>Additional</h3>
-          <ul>
-            <li>
-              <a href="additional/experiment.html"><span>*Experiment</span></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <noscript
-        >This should only appear if you don't have JavaScript enabled. Which
-        does not matter for this part of the assignment anyways :)</noscript
-      >
     </main>
 
     <footer>
-      <p>Made by <b>Akshat Jain</b>.</p>
+      <hr />
+      <p>
+        made with ☕️🦾 by <strong>akshat jain</strong> |
+        <a href="mailto:akshat30@gmail.com">akshat30@gmail.com</a> |
+        <a href="https://www.linkedin.com/in/akshatja1n/" target="_blank"
+          >linkedin</a
+        >
+      </p>
+      <p>&copy; 2025 akshat jain</p>
     </footer>
   </body>
 </html>
